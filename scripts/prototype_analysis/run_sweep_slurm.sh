@@ -133,14 +133,6 @@ if [[ -z "$COMPILE" ]]; then
     export SINGULARITYENV_TORCH_COMPILE_DISABLE=1
 fi
 
-# --- Proxy settings (required for compute nodes to reach the internet) ---
-# export https_proxy=http://www-proxy.ijs.si:8080
-# export http_proxy=http://www-proxy.ijs.si:8080
-# export no_proxy=127.0.0.0/8
-# export SINGULARITYENV_https_proxy="$https_proxy"
-# export SINGULARITYENV_http_proxy="$http_proxy"
-# export SINGULARITYENV_no_proxy="$no_proxy"
-
 # --- Writable cache directories ---
 export HF_HOME="$HOME/.cache/huggingface"
 export TORCH_HOME="$HOME/.cache/torch"
